@@ -1,0 +1,15 @@
+/* 
+  estilos.scss
+  ============
+
+  Archivo principal de entrada SCSS.
+  Este archivo importa todos los estilos del proyecto:
+  - reset.scss: limpieza de estilos por defecto del navegador
+  - main.scss: estilos personalizados y diseño de la landing
+
+  Autor: Miq
+  Fecha: 15.04.25
+*/
+
+@use 'reset';
+@use 'main';

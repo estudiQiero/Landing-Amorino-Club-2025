@@ -1,0 +1,238 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap');
+
+/* ---------- Variables ---------- */
+$color-blanc: #ffffff;
+$color-negre: #000000;
+$color-marró-fosc: #3d1f15;
+$color-marró-clar: #7a4a3a;
+$color-crema: #fae6c8;
+$color-granat: #8c3a24;
+
+/* ---------- Estils base ---------- */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: $color-blanc;
+    color: $color-marró-fosc;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ---------- Estructura general amb flex ---------- */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* ---------- Titulars ---------- */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto Slab', serif;
+    color: $color-marró-fosc;
+}
+
+/* ---------- Textos ---------- */
+p,
+li {
+    font-size: 1.1rem;
+    margin: 0.6rem 0;
+    line-height: 1.4em;
+}
+
+ul,
+ol {
+    padding-left: 1.5rem;
+    line-height: 1.4em;
+}
+
+/* ---------- Header amb logo i menú d'idioma ---------- */
+header {
+    width: 100%;
+    background-color: $color-blanc;
+    padding: 2em 1.5rem;
+    background-image: url('img/Composcion-Helado-copa-4000W.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenidor-header {
+    height: 400px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+}
+
+
+/* Menú d'idiomes */
+.idioma-menu {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.idioma-menu a {
+    text-decoration: none;
+    color: $color-marró-fosc;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+}
+
+.idioma-menu a:hover {
+    background-color: lighten($color-marró-fosc, 35%);
+    color: $color-blanc;
+}
+
+.idioma-menu a.active {
+    background-color: $color-marró-fosc;
+    color: $color-blanc;
+}
+
+/* ---------- Seccions ---------- */
+section {
+    width: 100%;
+    padding: 3rem 1.5rem;
+}
+
+section>.contenidor {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Secció 1: fons blanc, text centrat */
+section:first-of-type {
+    background-color: $color-blanc;
+}
+
+section:first-of-type .contenidor {
+    text-align: center;
+
+    h1,
+    h2,
+    p {
+        color: $color-marró-fosc;
+    }
+}
+
+section:first-of-type h1,
+section:first-of-type h2 {
+    color: $color-granat;
+}
+
+section:first-of-type .boton-descarga {
+    display: block;
+    margin: 1rem auto 0;
+}
+
+/* Secció 2: fons crema */
+section:nth-of-type(2) {
+    background-color: $color-crema;
+
+    ol {
+        list-style-type: decimal;
+    }
+}
+
+/* Secció 3: marró clar amb text clar */
+section:nth-of-type(3) {
+    background-color: $color-marró-clar;
+    color: $color-blanc;
+
+    h3,
+    h4 {
+        color: $color-blanc;
+    }
+}
+
+/* Secció 4 (última): marró fosc amb text blanc */
+section:last-of-type {
+    background-color: $color-marró-fosc;
+    color: $color-blanc;
+
+    h3,
+    h4,
+    p {
+        max-width: 700px;
+        margin: auto;
+        color: $color-blanc;
+        text-align: center;
+    }
+}
+
+.preguntes-faq {
+    padding-left: 1.5rem;
+}
+
+
+/* ---------- Botó destacat ---------- */
+.boton-descarga {
+    background-color: $color-granat;
+    color: $color-blanc;
+    padding: 0.9rem 1.6rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.boton-descarga:hover {
+    background-color: color.adjust($color-granat, $lightness: -10%);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    padding: 2rem 1.5rem 1rem;
+    background-color: $color-negre;
+    color: $color-blanc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+
+    a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        color: $color-blanc;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        svg {
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
