@@ -63,6 +63,7 @@ ol {
 }
 
 /* ---------- Variables ---------- */
+/* --------- Media Queries --------- */
 /* ---------- Estils base ---------- */
 html,
 body {
@@ -90,9 +91,14 @@ main {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Roboto Slab", serif;
   color: #3d1f15;
+}
+
+h5 {
+  font-size: 1.1rem;
 }
 
 /* ---------- Textos ---------- */
@@ -194,9 +200,21 @@ section:first-of-type .boton-descarga {
   margin: 1rem auto 0;
 }
 
+.parallax {
+  background-attachment: fixed;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  padding: 3rem 1rem;
+}
+
 /* Secció 2: fons crema */
 section:nth-of-type(2) {
   background-color: #fae6c8;
+  background-image: url("img/fondo1iphone.png");
+  background-repeat: no-repeat;
+  background-position: 50% -70%;
 }
 section:nth-of-type(2) ol {
   list-style-type: decimal;
@@ -205,6 +223,9 @@ section:nth-of-type(2) ol {
 /* Secció 3: marró clar amb text clar */
 section:nth-of-type(3) {
   background-color: #7a4a3a;
+  background-image: url("img/logo-fons-amorino.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
   color: #ffffff;
 }
 section:nth-of-type(3) h3,
@@ -228,24 +249,75 @@ section:last-of-type p {
 
 .preguntes-faq {
   padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+.preguntes-faq .faq-question {
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  padding: 0.6rem;
+}
+.preguntes-faq .faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+}
+.preguntes-faq .faq-question.open::after {
+  content: "–";
+}
+.preguntes-faq .faq-answer {
+  margin-left: 2em;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.preguntes-faq .faq-answer.visible {
+  max-height: 1000px;
+  opacity: 1;
+  margin-top: 0.5rem;
 }
 
-/* ---------- Botó destacat ---------- */
-.boton-descarga {
-  background-color: #8c3a24;
-  color: #ffffff;
+/* ---------- Botons descarrega ---------- */
+.botonesDescarga {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.botonesDescarga a {
+  width: 50%;
+  height: auto;
   padding: 0.9rem 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
   text-align: center;
   transition: background-color 0.3s ease;
-  display: block;
-  margin: 1rem auto 0;
 }
-
-.boton-descarga:hover {
-  background-color: rgb(99.4318181818, 41.1931818182, 25.5681818182);
+.botonesDescarga a img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border: 0.15em solid white;
+  border-radius: 0.6em;
+}
+@media (max-width: 600px) {
+  .botonesDescarga {
+    flex-direction: column;
+    align-items: center;
+  }
+  .botonesDescarga a {
+    width: 100%;
+    max-width: 250px;
+  }
 }
 
 /* ---------- Footer ---------- */

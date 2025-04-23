@@ -9,6 +9,10 @@ $color-marró-clar: #7a4a3a;
 $color-crema: #fae6c8;
 $color-granat: #8c3a24;
 
+/* --------- Media Queries --------- */
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 900px;
+
 /* ---------- Estils base ---------- */
 html,
 body {
@@ -36,9 +40,14 @@ main {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: 'Roboto Slab', serif;
     color: $color-marró-fosc;
+}
+
+h5 {
+    font-size: 1.1rem;
 }
 
 /* ---------- Textos ---------- */
@@ -142,9 +151,22 @@ section:first-of-type .boton-descarga {
     margin: 1rem auto 0;
 }
 
+// fons parallax
+.parallax {
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding: 3rem 1rem;
+}
+
 /* Secció 2: fons crema */
 section:nth-of-type(2) {
     background-color: $color-crema;
+    background-image: url('img/fondo1iphone.png');
+    background-repeat: no-repeat;
+    background-position: 50% -70%;
 
     ol {
         list-style-type: decimal;
@@ -154,6 +176,9 @@ section:nth-of-type(2) {
 /* Secció 3: marró clar amb text clar */
 section:nth-of-type(3) {
     background-color: $color-marró-clar;
+    background-image: url('img/logo-fons-amorino.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
     color: $color-blanc;
 
     h3,
@@ -179,26 +204,91 @@ section:last-of-type {
 
 .preguntes-faq {
     padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+
+    .faq-question {
+        cursor: pointer;
+        position: relative;
+        font-weight: 600;
+        padding: 0.6rem;
+
+        &::after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-weight: bold;
+        }
+
+        &.open::after {
+            content: "–";
+        }
+    }
+
+    .faq-answer {
+        margin-left: 2em;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+
+        &.visible {
+            max-height: 1000px;
+            opacity: 1;
+            margin-top: 0.5rem;
+        }
+    }
 }
 
 
-/* ---------- Botó destacat ---------- */
-.boton-descarga {
-    background-color: $color-granat;
-    color: $color-blanc;
-    padding: 0.9rem 1.6rem;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    display: block;
-    margin: 1rem auto 0;
+/* ---------- Botons descarrega ---------- */
+
+.botonesDescarga {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+
+    a {
+        width: 50%;
+        height: auto;
+        padding: 0.9rem 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s ease;
+
+        img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border: 0.15em solid white;
+            border-radius: 0.6em;
+        }
+    }
+
+    // 🌐 Tablet
+    @media (max-width: $breakpoint-tablet) {}
+
+    // 📱 Mòbil
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            width: 100%;
+            max-width: 250px;
+        }
+    }
 }
 
-.boton-descarga:hover {
-    background-color: color.adjust($color-granat, $lightness: -10%);
-}
+
 
 /* ---------- Footer ---------- */
 footer {
