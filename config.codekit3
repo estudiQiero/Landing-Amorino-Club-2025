@@ -39,6 +39,17 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/bronze.webp" : {
+      "ft" : 8388608,
+      "iS" : 46568,
+      "oA" : 0,
+      "oAP" : "\/img\/bronze.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/img\/Composcion-Helado-copa-2500W.webp" : {
       "ft" : 8388608,
       "iS" : 66220,
@@ -107,6 +118,17 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/gold.webp" : {
+      "ft" : 8388608,
+      "iS" : 56406,
+      "oA" : 0,
+      "oAP" : "\/img\/gold.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/img\/instagram-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -140,6 +162,28 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/platinum.webp" : {
+      "ft" : 8388608,
+      "iS" : 51248,
+      "oA" : 0,
+      "oAP" : "\/img\/platinum.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/silver.webp" : {
+      "ft" : 8388608,
+      "iS" : 34762,
+      "oA" : 0,
+      "oAP" : "\/img\/silver.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/img\/web-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -150,12 +194,36 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/index-en.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/index-en.html",
+      "oF" : 0
+    },
     "\/index-EN.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/index-EN.html",
+      "oF" : 0
+    },
+    "\/index-es.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/index-es.html",
+      "oF" : 0
+    },
+    "\/index-ES.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/index-ES.html",
       "oF" : 0
     },
     "\/index.html" : {

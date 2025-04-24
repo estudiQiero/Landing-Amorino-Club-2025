@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",(()=>{document.querySelectorAll(".faq-question").forEach((e=>{e.addEventListener("click",(()=>{const t=e.nextElementSibling;t&&t.classList.contains("faq-answer")&&(t.classList.toggle("visible"),e.classList.toggle("open"))}))}))})),document.getElementById("any-actual").textContent=(new Date).getFullYear();
+document.getElementById("any-actual").textContent=(new Date).getFullYear();
