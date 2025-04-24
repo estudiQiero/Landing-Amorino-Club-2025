@@ -73,6 +73,10 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+        background-image: url('img/Composcion-Helado-copa-movi-1200W.webp');
+    }
 }
 
 .contenidor-header {
@@ -260,38 +264,39 @@ section:last-of-type {
         justify-content: center;
         gap: 2rem;
         padding: 2rem 1rem;
-      
+
         .caixa-medalles {
-          width: 45%;
-          max-width: 180px;
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      
-          .img-medalla {
-            width: 100%;
-            img {
-              width: 100%;
-              height: auto;
-              display: block;
+            width: 45%;
+            max-width: 180px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-medalla {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
             }
-          }
-      
-          .text-medalles {
-            margin-top: 0.8rem;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #3d1f15; // o qualsevol color que encaixi amb la teva paleta
-          }
+
+            .text-medalles {
+                margin-top: 0.8rem;
+                font-size: 1rem;
+                font-weight: 600;
+                color: #3d1f15; // o qualsevol color que encaixi amb la teva paleta
+            }
         }
-      
+
         @media (min-width: 768px) {
-          .caixa-medalles {
-            width: 20%;
-          }
+            .caixa-medalles {
+                width: 20%;
+            }
         }
-      }      
+    }
 }
 
 
