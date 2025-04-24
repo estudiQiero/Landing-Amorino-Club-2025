@@ -106,19 +106,6 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/fondo3iphones.png" : {
-      "ft" : 32768,
-      "iS" : 390484,
-      "oA" : 0,
-      "oAP" : "\/img\/fondo3iphones.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
     "\/img\/getItGooglePlay.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -211,22 +198,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/index-en.html",
-      "oF" : 0
-    },
-    "\/index-EN.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/index-EN.html",
-      "oF" : 0
-    },
-    "\/index-es.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/index-es.html",
       "oF" : 0
     },
     "\/index-ES.html" : {
