@@ -69,13 +69,13 @@ header {
     width: 100%;
     background-color: $color-blanc;
     padding: 2em 1.5rem;
-    background-image: url('img/Composcion-Helado-copa-4000W.webp');
+    background-image: url('img/Composcion-Helado-copa-4000W.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
     @media (max-width: 768px) {
-        background-image: url('img/Composcion-Helado-copa-movi-1200W.webp');
+        background-image: url('img/Composcion-Helado-copa-movi-1200W.jpg');
     }
 }
 
@@ -287,7 +287,7 @@ section:last-of-type {
                 margin-top: 0.8rem;
                 font-size: 1rem;
                 font-weight: 600;
-                color: #3d1f15; // o qualsevol color que encaixi amb la teva paleta
+                color: #3d1f15;
             }
         }
 

@@ -39,6 +39,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/bronze.png" : {
+      "ft" : 32768,
+      "iS" : 60861,
+      "oA" : 0,
+      "oAP" : "\/img\/bronze.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/bronze.webp" : {
       "ft" : 8388608,
       "iS" : 46568,
@@ -61,6 +74,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/img\/Composcion-Helado-copa-4000W.jpg" : {
+      "ft" : 16384,
+      "iS" : 93023,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/Composcion-Helado-copa-4000W.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/Composcion-Helado-copa-4000W.webp" : {
       "ft" : 8388608,
       "iS" : 72220,
@@ -70,6 +96,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/Composcion-Helado-copa-movi-1200W.jpg" : {
+      "ft" : 16384,
+      "iS" : 43733,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/Composcion-Helado-copa-movi-1200W.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/img\/Composcion-Helado-copa-movi-1200W.webp" : {
@@ -116,6 +155,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/gold.png" : {
+      "ft" : 32768,
+      "iS" : 75482,
+      "oA" : 0,
+      "oAP" : "\/img\/gold.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/gold.webp" : {
       "ft" : 8388608,
       "iS" : 56406,
@@ -160,6 +212,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/platinum.png" : {
+      "ft" : 32768,
+      "iS" : 70918,
+      "oA" : 0,
+      "oAP" : "\/img\/platinum.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/platinum.webp" : {
       "ft" : 8388608,
       "iS" : 51248,
@@ -169,6 +234,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/silver.png" : {
+      "ft" : 32768,
+      "iS" : 45345,
+      "oA" : 0,
+      "oAP" : "\/img\/silver.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/img\/silver.webp" : {
