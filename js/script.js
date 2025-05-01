@@ -1,4 +1,4 @@
-// Obre el item pregunta al fer clic a l'icona
+// Obre el item "FAQ" al fer clic a l'icona +
 // document.addEventListener("DOMContentLoaded", () => {
 //   const preguntas = document.querySelectorAll(".faq-question");
 
