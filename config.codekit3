@@ -212,6 +212,45 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/mano-1.png" : {
+      "ft" : 32768,
+      "iS" : 8540,
+      "oA" : 0,
+      "oAP" : "\/img\/mano-1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/mano-2.png" : {
+      "ft" : 32768,
+      "iS" : 10128,
+      "oA" : 0,
+      "oAP" : "\/img\/mano-2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/mano-3.png" : {
+      "ft" : 32768,
+      "iS" : 10257,
+      "oA" : 0,
+      "oAP" : "\/img\/mano-3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/platinum.png" : {
       "ft" : 32768,
       "iS" : 70918,
@@ -323,6 +362,14 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/README.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0
     },
     "\/README.md" : {
       "cB" : 0,

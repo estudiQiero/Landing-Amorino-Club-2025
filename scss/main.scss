@@ -53,9 +53,12 @@ h5 {
 /* ---------- Textos ---------- */
 p,
 li {
-    font-size: 1.1rem;
-    margin: 0.6rem 0;
-    line-height: 1.4em;
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.3em;
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: none;
 }
 
 ul,
@@ -143,6 +146,52 @@ section:first-of-type .contenidor {
     p {
         color: $color-marró-fosc;
     }
+
+    h1 {
+        font-size: 1.8rem;
+        margin: 0 0 1rem 0;
+        line-height: 2.2rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .4rem;
+        text-align: left;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+        line-height: 1.5rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 2.2rem;
+            height: 2.2rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 0.2rem;
+            flex-shrink: 0;
+            align-self: flex-start; // 🔥 clau: enganxa la icona a dalt del text
+        }
+
+        &:nth-of-type(1)::before {
+            background-image: url("img/mano-1.png");
+        }
+
+        &:nth-of-type(2)::before {
+            background-image: url("img/mano-2.png");
+        }
+
+        &:nth-of-type(3)::before {
+            background-image: url("img/mano-3.png");
+        }
+    }
 }
 
 section:first-of-type h1,
@@ -210,94 +259,98 @@ section:last-of-type {
     }
 }
 
-.preguntes-faq {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-
-    .faq-question {
-        cursor: pointer;
-        position: relative;
-        font-weight: 600;
-        padding: 0.6rem;
-
-        // &::after {
-        //     content: "+";
-        //     position: absolute;
-        //     right: 0;
-        //     top: 0;
-        //     font-weight: bold;
-        // }
-
-        // &.open::after {
-        //     content: "–";
-        // }
-    }
-
-    .faq-answer {
-        margin-left: 2em;
-        // max-height: 0;
-        // overflow: hidden;
-        // opacity: 0;
-        // transition: all 0.3s ease;
-
-        // &.visible {
-        //     max-height: 1000px;
-        //     opacity: 1;
-        //     margin-top: 0.5rem;
-        // }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
+#seccio-faqs {
+    .preguntes-faq {
+        padding-left: 0;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    
+        .faq-question {
+            cursor: pointer;
+            position: relative;
+            font-weight: 600;
+            padding: 0.6rem;
+    
+            // &::after {
+            //     content: "+";
+            //     position: absolute;
+            //     right: 0;
+            //     top: 0;
+            //     font-weight: bold;
+            // }
+    
+            // &.open::after {
+            //     content: "–";
+            // }
         }
-
-        ol {
-            list-style-type: decimal;
-            padding-left: 1.5rem;
+    
+        .faq-answer {
+            margin-left: 2em;
+            // max-height: 0;
+            // overflow: hidden;
+            // opacity: 0;
+            // transition: all 0.3s ease;
+    
+            // &.visible {
+            //     max-height: 1000px;
+            //     opacity: 1;
+            //     margin-top: 0.5rem;
+            // }
+    
+            ul {
+                list-style-type: disc;
+                padding-left: 1.5rem;
+            }
+    
+            ol {
+                list-style-type: decimal;
+                padding-left: 1.5rem;
+            }
         }
-    }
-
-    #cont-medalles {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        padding: 2rem 1rem;
-
-        .caixa-medalles {
-            width: 45%;
-            max-width: 180px;
-            text-align: center;
+    
+        #cont-medalles {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .img-medalla {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 1rem;
+    
+            .caixa-medalles {
                 width: 100%;
-
-                img {
+                max-width: 180px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .img-medalla {
                     width: 100%;
-                    height: auto;
-                    display: block;
+    
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+    
+                .text-medalles {
+                    margin-top: 0.8rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #3d1f15;
                 }
             }
-
-            .text-medalles {
-                margin-top: 0.8rem;
-                font-size: 1rem;
-                font-weight: 600;
-                color: #3d1f15;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .caixa-medalles {
-                width: 20%;
+    
+            @media (min-width: 768px) {
+                .caixa-medalles {
+                    width: 20%;
+                }
             }
         }
     }
 }
+
+
 
 
 /* ---------- Botons descarrega ---------- */

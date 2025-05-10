@@ -104,9 +104,13 @@ h5 {
 /* ---------- Textos ---------- */
 p,
 li {
-  font-size: 1.1rem;
-  margin: 0.6rem 0;
-  line-height: 1.4em;
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.3em;
+  word-break: normal;
+  overflow-wrap: break-word;
+  -webkit-hyphens: none;
+          hyphens: none;
 }
 
 ul,
@@ -194,6 +198,46 @@ section:first-of-type .contenidor h2,
 section:first-of-type .contenidor p {
   color: #3d1f15;
 }
+section:first-of-type .contenidor h1 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem 0;
+  line-height: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+section:first-of-type .contenidor h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  line-height: 1.5rem;
+  position: relative;
+}
+section:first-of-type .contenidor h2::before {
+  content: "";
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0.2rem;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+section:first-of-type .contenidor h2:nth-of-type(1)::before {
+  background-image: url("img/mano-1.png");
+}
+section:first-of-type .contenidor h2:nth-of-type(2)::before {
+  background-image: url("img/mano-2.png");
+}
+section:first-of-type .contenidor h2:nth-of-type(3)::before {
+  background-image: url("img/mano-3.png");
+}
 
 section:first-of-type h1,
 section:first-of-type h2 {
@@ -255,59 +299,59 @@ section:last-of-type p {
   text-align: center;
 }
 
-.preguntes-faq {
-  padding-left: 1.5rem;
+#seccio-faqs .preguntes-faq {
+  padding-left: 0;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
 }
-.preguntes-faq .faq-question {
+#seccio-faqs .preguntes-faq .faq-question {
   cursor: pointer;
   position: relative;
   font-weight: 600;
   padding: 0.6rem;
 }
-.preguntes-faq .faq-answer {
+#seccio-faqs .preguntes-faq .faq-answer {
   margin-left: 2em;
 }
-.preguntes-faq .faq-answer ul {
+#seccio-faqs .preguntes-faq .faq-answer ul {
   list-style-type: disc;
   padding-left: 1.5rem;
 }
-.preguntes-faq .faq-answer ol {
+#seccio-faqs .preguntes-faq .faq-answer ol {
   list-style-type: decimal;
   padding-left: 1.5rem;
 }
-.preguntes-faq #cont-medalles {
+#seccio-faqs .preguntes-faq #cont-medalles {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 2rem 1rem;
 }
-.preguntes-faq #cont-medalles .caixa-medalles {
-  width: 45%;
+#seccio-faqs .preguntes-faq #cont-medalles .caixa-medalles {
+  width: 100%;
   max-width: 180px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.preguntes-faq #cont-medalles .caixa-medalles .img-medalla {
+#seccio-faqs .preguntes-faq #cont-medalles .caixa-medalles .img-medalla {
   width: 100%;
 }
-.preguntes-faq #cont-medalles .caixa-medalles .img-medalla img {
+#seccio-faqs .preguntes-faq #cont-medalles .caixa-medalles .img-medalla img {
   width: 100%;
   height: auto;
   display: block;
 }
-.preguntes-faq #cont-medalles .caixa-medalles .text-medalles {
+#seccio-faqs .preguntes-faq #cont-medalles .caixa-medalles .text-medalles {
   margin-top: 0.8rem;
   font-size: 1rem;
   font-weight: 600;
   color: #3d1f15;
 }
 @media (min-width: 768px) {
-  .preguntes-faq #cont-medalles .caixa-medalles {
+  #seccio-faqs .preguntes-faq #cont-medalles .caixa-medalles {
     width: 20%;
   }
 }
