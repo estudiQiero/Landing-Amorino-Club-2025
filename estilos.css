@@ -124,15 +124,10 @@ header {
   width: 100%;
   background-color: #ffffff;
   padding: 2em 1.5rem;
-  background-image: url("img/Composcion-Helado-copa-4000W.jpg");
+  background-image: url("img/Cabecera-Amorino-Club-2025-baixa.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-@media (max-width: 768px) {
-  header {
-    background-image: url("img/Composcion-Helado-copa-movi-1200W.jpg");
-  }
 }
 
 .contenidor-header {
