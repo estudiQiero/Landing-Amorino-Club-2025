@@ -44,6 +44,8 @@ h4,
 h5 {
     font-family: 'Roboto Slab', serif;
     color: $color-marró-fosc;
+    hyphens: none;
+    word-break: normal;
 }
 
 h5 {
@@ -264,13 +266,13 @@ section:last-of-type {
         padding-left: 0;
         margin-bottom: 1.5rem;
         padding-bottom: 1rem;
-    
+
         .faq-question {
             cursor: pointer;
             position: relative;
             font-weight: 600;
             padding: 0.6rem;
-    
+
             // &::after {
             //     content: "+";
             //     position: absolute;
@@ -278,43 +280,43 @@ section:last-of-type {
             //     top: 0;
             //     font-weight: bold;
             // }
-    
+
             // &.open::after {
             //     content: "–";
             // }
         }
-    
+
         .faq-answer {
             margin-left: 2em;
             // max-height: 0;
             // overflow: hidden;
             // opacity: 0;
             // transition: all 0.3s ease;
-    
+
             // &.visible {
             //     max-height: 1000px;
             //     opacity: 1;
             //     margin-top: 0.5rem;
             // }
-    
+
             ul {
                 list-style-type: disc;
                 padding-left: 1.5rem;
             }
-    
+
             ol {
                 list-style-type: decimal;
                 padding-left: 1.5rem;
             }
         }
-    
+
         #cont-medalles {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 2rem;
             padding: 2rem 1rem;
-    
+
             .caixa-medalles {
                 width: 100%;
                 max-width: 180px;
@@ -322,17 +324,17 @@ section:last-of-type {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-    
+
                 .img-medalla {
                     width: 100%;
-    
+
                     img {
                         width: 100%;
                         height: auto;
                         display: block;
                     }
                 }
-    
+
                 .text-medalles {
                     margin-top: 0.8rem;
                     font-size: 1rem;
@@ -340,7 +342,7 @@ section:last-of-type {
                     color: #3d1f15;
                 }
             }
-    
+
             @media (min-width: 768px) {
                 .caixa-medalles {
                     width: 20%;

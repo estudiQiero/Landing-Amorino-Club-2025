@@ -95,6 +95,9 @@ h4,
 h5 {
   font-family: "Roboto Slab", serif;
   color: #3d1f15;
+  -webkit-hyphens: none;
+          hyphens: none;
+  word-break: normal;
 }
 
 h5 {
